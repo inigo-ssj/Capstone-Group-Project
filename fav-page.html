@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorites - Everwear</title>
 
-    <link rel="stylesheet" href="css/cart-fav.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/favorite.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,23 +19,27 @@
       <div class="row">
         <div class="nav-bar">
           <div class="logo">
-            <a href="#"
+            <a href="index.html"
               ><img src="Resources/logo/everwear-logo-black.png" alt="ew_logo"
             /></a>
           </div>
           <ul class="main-nav">
             <li class="active">
-              <a href="#">SHOP</a>
-              <a href="#">COLLECTIONS</a>
-              <a href="#">ABOUT US</a>
-              <a href="#">CONTACT US</a>
+              <a href="index.html">HOME</a>
+              <a href="shop.html">SHOP</a>
+              <a href="about-us.html">ABOUT US</a>
+              <a href="contact-us.html">CONTACT US</a>
             </li>
           </ul>
           <ul class="icon-nav">
             <li class="active">
-              <a href="#"><img src="Resources/icons/acc-black.png" alt="" /></a>
-              <a href="#"><img src="Resources/icons/fav-black.png" alt="" /></a>
-              <a href="#"
+              <a href="acc-login.html"
+                ><img src="Resources/icons/acc-black.png" alt=""
+              /></a>
+              <a href="fav-empty-page.html"
+                ><img src="Resources/icons/fav-black.png" alt=""
+              /></a>
+              <a href="cart-empty-page.html"
                 ><img src="Resources/icons/cart-black.png" alt=""
               /></a>
             </li>
@@ -45,11 +48,59 @@
       </div>
     </header>
 
-    <section class="cartfav-page">
-      <h1>Favorites</h1>
-      <div class="cartfav-content">
-        <p>Favorites list is currently empty.</p>
-        <a href="shop.html" class="shopbtn">Browse Products</a>
+    <section class="favorites-page">
+      <div class="favorites-header">
+        <h1>Your Favorites</h1>
+        <p>Here are the items you've saved for later.</p>
+      </div>
+
+      <div class="favorites-items">
+        <div class="favorite-item">
+          <div class="frame">
+            <img
+              src="Resources/product-img/Pants/pexels-daniel-duarte-270529097-19769548.jpg"
+              alt="Product Image"
+            />
+          </div>
+          <div class="favorite-item-info">
+            <h3>Product Name</h3>
+            <p class="favorite-item-price">$50.00</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <div class="favorite-item">
+          <div class="frame">
+            <img
+              src="Resources/product-img/Jacket/pexels-atef-khaled-825144-1833082.jpg"
+              alt="Product Image"
+            />
+          </div>
+          <div class="favorite-item-info">
+            <h3>Product Name</h3>
+            <p class="favorite-item-price">$30.00</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+
+        <div class="favorite-item">
+          <div class="frame">
+            <img
+              src="Resources/product-img/Dress/Image 1.jpg"
+              alt="Product Image"
+            />
+          </div>
+          <div class="favorite-item-info">
+            <h3>Product Name</h3>
+            <p class="favorite-item-price">$45.00</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="favorites-footer">
+        <br />
+        <a href="shop.html" class="shopbtn">Continue Shopping</a>
       </div>
     </section>
 
@@ -58,10 +109,12 @@
         <!-- Left-Aligned Section -->
         <div class="footer-left">
           <div class="footer-navigation">
-            <a href="#shop">Shop</a> | <a href="#about-us">About Us</a> |
-            <a href="#wishlist">Wishlist</a> | <a href="#cart">Cart</a> |
-            <a href="#contact-us">Contact Us</a> |
-            <a href="#faqs">FAQs</a>
+            <a href="shop.html">Shop</a> |
+            <a href="about-us.html">About Us</a> |
+            <a href="fav-empty-page.html">Favorites</a> |
+            <a href="cart-empty-page.html">Cart</a> |
+            <a href="contact-us.html">Contact Us</a> |
+            <a href="faq.html">FAQs</a>
           </div>
 
           <div class="footer-social">
@@ -105,10 +158,10 @@
       <!-- Bottom Section -->
       <div class="footer-bottom">
         <div class="footer-policies">
-          <a href="#shipping-policy">Shipping Policy</a> |
-          <a href="#return-policy">Return & Refund Policy</a> |
-          <a href="#privacy-policy">Privacy Policy</a> |
-          <a href="#terms">Terms & Conditions</a>
+          <a href="shipping-policy.html">Shipping Policy</a> |
+          <a href="return-refund-policy.html">Return & Refund Policy</a> |
+          <a href="privacy-policy.html">Privacy Policy</a> |
+          <a href="terms-conditions.html">Terms & Conditions</a>
         </div>
         <p>© 2024 Everwear. All rights reserved.</p>
       </div>

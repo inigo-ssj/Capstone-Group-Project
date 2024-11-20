@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------- login page ----------------------- */
+
+.login-page {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.login-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: -10px;
+}
+
+.forgot-password a {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  margin-top: 20px;
+}
+
+.login-button button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #444444;
+}
+
+.signup-link {
+  margin-top: 20px;
+}
+
+.signup-link p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- register page ----------------------- */
+
+.register-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.terms-group {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.terms-group a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.terms-group input {
+  margin-right: 8px;
+}
+
+.form-button {
+  text-align: center;
+}
+
+.form-button button {
+  padding: 12px 30px;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.form-button button:hover {
+  background-color: #444444;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.login-link p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* -------------------- order history ----------------------- */
+
+.order-history-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-history-page h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-history-list {
+  margin-top: 30px;
+}
+
+.order-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.order-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.order-item p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.view-details-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.view-details-btn:hover {
+  background-color: #444444;
+}
+
+.order-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ----------------- profile details -------------------- */
+
+.profile-details-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details-page h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-details-form {
+  margin-top: 30px;
+}
+
+.form-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-section label {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.save-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.save-btn:hover {
+  background-color: #444444;
+}

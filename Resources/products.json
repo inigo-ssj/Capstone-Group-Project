@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Minimalist Tee",
+      "description": "A sleek and comfortable tee.",
+      "price": "19.99",
+      "image": "minimalist-tee.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Classic Hoodie",
+      "description": "Stay cozy with our classic hoodie.",
+      "price": "29.99",
+      "image": "classic-hoodie.jpg"
+    }
+  ]
+  
