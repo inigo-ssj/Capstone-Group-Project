@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Everwear Store</title>
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="testimonials">
+        <div class="featured-feedback">
+          <h2>Featured Feedback</h2>
+          <div class="testimonial-list">
+            <div class="testimonial">
+              <p>
+                "Everwear's quality is unmatched! My go-to store for stylish and
+                durable clothing."
+              </p>
+              <p><strong>- Alex R.</strong></p>
+            </div>
+            <div class="testimonial">
+              <p>
+                "Fast shipping and excellent customer service. Everwear has
+                never disappointed me!"
+              </p>
+              <p><strong>- Jamie L.</strong></p>
+            </div>
+            <div class="testimonial">
+              <p>
+                "I love their minimalist designs and versatile styles. Perfect
+                for my wardrobe!"
+              </p>
+              <p><strong>- Sarah W.</strong></p>
+            </div>
+            <div class="testimonial">
+              <p>
+                "The cap I purchased is my new favorite accessory. Great quality
+                and stylish!"
+              </p>
+              <p><strong>- Jake L.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <h2>Customer Reviews</h2>
+        </div>
+        <div class="reviews-container" id="reviews-container"></div>
+
+        <div class="review-form">
+          <h3>Write a Review</h3>
+          <form id="review-form">
+            <label for="review-name">Your Name</label>
+            <input
+              type="text"
+              id="review-name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="review-rating">Your Rating</label>
+            <div class="rating-input">
+              <span class="star" data-value="1">&#9733;</span>
+              <span class="star" data-value="2">&#9733;</span>
+              <span class="star" data-value="3">&#9733;</span>
+              <span class="star" data-value="4">&#9733;</span>
+              <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <input type="hidden" id="review-rating" value="0" required />
+
+            <label for="review-message">Your Review</label>
+            <textarea
+              id="review-message"
+              placeholder="Write your review"
+              required
+            ></textarea>
+
+            <button type="submit">Submit Review</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+    <div class="cart-main" id="cartContent"></div>
+
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+    <script src="js/cartContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

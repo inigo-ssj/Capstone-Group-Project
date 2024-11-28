@@ -1,0 +1,324 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shop-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filters {
+  flex: 1;
+  max-width: 270px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filters h2 {
+  font-size: 22px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.filters h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters li {
+  margin-bottom: 12px;
+}
+
+.filters button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #444;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 14px;
+  gap: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.filters button:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.filters button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.product-listing {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 40px;
+  margin-top: 0px;
+  padding: 0px 10px;
+  max-width: 100%;
+  justify-content: center;
+  position: relative;
+  transform: scale(0.9);
+  transform-origin: top center;
+}
+
+/* ---------------------------------------------------------- */
+
+.product-card {
+  text-align: left;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 3ms ease-in-out;
+  width: 20rem;
+  height: 30rem;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.frame {
+  max-width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product-image {
+  height: 120%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.product-name {
+  font-size: 0.9rem;
+  margin-top: 0.9rem;
+  font-weight: 500;
+}
+
+.product-price {
+  color: #555;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------------- */
+
+/* .product-card .actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+
+
+#products-container > div > div {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+} */
+
+/* -------------add to cart-------------- */
+
+.add-to-cart img {
+  max-width: 100%;
+}
+
+.add-to-cart {
+  height: 2.1rem;
+  width: 2.1rem;
+  padding: 5px;
+  background-color: #fff;
+  color: white;
+  border: #aaaaaaee solid 0.5px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+
+/* -------------add to wishlist-------------- */
+
+.add-to-wishlist img {
+  max-width: 100%;
+}
+
+.add-to-wishlist {
+  height: 2.1rem;
+  width: 2.1rem;
+  padding: 5px;
+  background-color: #fff;
+  color: white;
+  border: #aaaaaaee solid 0.5px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.add-to-wishlist button img::after {
+  src: url(../Resources/icons/fav-black-toggled.png);
+}
+
+/* -------------hover effect----------------- */
+
+.product-card button {
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.product-card button:hover {
+  scale: 110%;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-card:hover button {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.product-card:hover .product-name {
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------- */
+/* 
+.add-to-cart {
+  background: linear-gradient(45deg, #28a745, #218838);
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-to-cart:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(40, 167, 69, 0.4);
+  background: linear-gradient(45deg, #218838, #1e7e34);
+}
+
+.add-to-wishlist {
+  background: linear-gradient(45deg, #ff5722, #e64a19);
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 87, 34, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-to-wishlist:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(255, 87, 34, 0.4);
+  background: linear-gradient(45deg, #e64a19, #d84315);
+} */
+
+/* ---------------------------------------------------------------- */
+
+#sortDropdown {
+  background: #444;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 14px;
+  gap: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-section {
+    flex-direction: column;
+  }
+
+  .filters {
+    max-width: 100%;
+  }
+
+  .product-listing {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filters h2 {
+    font-size: 18px;
+  }
+
+  .filters button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .filters select {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .product-card h3 {
+    font-size: 14px;
+  }
+
+  .product-card span {
+    font-size: 12px;
+  }
+
+  .product-card button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}

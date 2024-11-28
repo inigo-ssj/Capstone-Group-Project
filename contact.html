@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Everwear Store</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="contact-us">
+        <div class="contact-container">
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>
+              We’d love to hear from you! Whether you have questions, feedback,
+              or need assistance, feel free to reach out.
+            </p>
+            <form
+              action="mailto:support@everwear.com"
+              method="POST"
+              enctype="text/plain"
+            >
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <div class="store-details">
+            <h2>Store Details</h2>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:support@everwear.com">support@everwear.com</a>
+            </p>
+            <p><strong>Phone:</strong> +1-800-555-1234</p>
+            <p>
+              <strong>Address:</strong> 123 Everwear Lane, Fashion City, FC
+              56789
+            </p>
+
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="https://instagram.com/EverwearOfficial" target="_blank"
+                ><img src="Resources/icons/ig.png" alt="ig-icon"
+              /></a>
+              <a href="https://facebook.com/EverwearOfficial" target="_blank"
+                ><img src="Resources/icons/fb.png" alt="fb-icon"
+              /></a>
+              <a href="https://x.com/EverwearOfficial" target="_blank"
+                ><img src="Resources/icons/x.png" alt="x-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+    <div class="cart-main" id="cartContent"></div>
+
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+    <script src="js/cartContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

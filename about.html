@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Everwear Store</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main class="container">
+      <section class="about-us">
+        <div class="about-container">
+          <div class="section our-story">
+            <h2>About Us</h2>
+            <p>
+              Welcome to <strong>Everwear</strong>, your destination for
+              timeless, comfortable, and stylish clothing. Our journey began
+              with a simple idea:
+              <em
+                >to create high-quality, versatile pieces that seamlessly fit
+                into your everyday life.</em
+              >
+            </p>
+            <p>
+              Whether it’s a casual <strong>T-shirt</strong>, a cozy
+              <strong>jacket</strong>, or trendy <strong>shorts</strong>, we’re
+              here to celebrate individuality through clothing that lasts.
+            </p>
+          </div>
+
+          <div class="section our-values">
+            <h2>Our Values</h2>
+            <ul>
+              <li>
+                <strong>Quality First:</strong> Premium materials for comfort,
+                durability, and style.
+              </li>
+              <li>
+                <strong>Timeless Design:</strong> Collections that stay in style
+                season after season.
+              </li>
+              <li>
+                <strong>Sustainability:</strong> Ethical practices and
+                eco-friendly choices.
+              </li>
+              <li>
+                <strong>Customer-Centric:</strong> We prioritize your comfort
+                and satisfaction.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section meet-the-team">
+            <h2>Meet the Team</h2>
+            <p>
+              Our team is a group of passionate individuals who share a love for
+              fashion and creativity. From designers sketching new collections
+              to skilled artisans crafting every stitch, we’re united by our
+              commitment to quality.
+            </p>
+            <div class="team-images">
+              <img src="Resources/about/5.png" alt="Team Member 1" />
+              <img src="Resources/about/2.png" alt="Team Member 2" />
+              <img src="Resources/about/9.png" alt="Team Member 3" />
+            </div>
+          </div>
+
+          <div class="section why-us">
+            <h2>Why Choose Everwear?</h2>
+            <p>
+              At <strong>Everwear</strong>, we’re proud to build a community of
+              stylish, confident, and eco-conscious individuals.
+            </p>
+            <ul>
+              <li>
+                <strong>Versatility:</strong> Perfect for casual outings or
+                special occasions.
+              </li>
+              <li>
+                <strong>Affordable Elegance:</strong> Premium quality at fair
+                prices.
+              </li>
+              <li>
+                <strong>Attention to Detail:</strong> Thoughtfully crafted for
+                your best experience.
+              </li>
+            </ul>
+          </div>
+
+          <div class="section join-us">
+            <h2>Join Our Community</h2>
+            <p>
+              We’re more than a clothing shop — we’re a lifestyle. Tag us on
+              social media @EverwearOfficial to share your favorite looks.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+
+    <div class="cart-main" id="cartContent"></div>
+    <footer id="footer"></footer>
+
+    <script src="js/headerFooterLoader.js"></script>
+
+    <script src="js/cartContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

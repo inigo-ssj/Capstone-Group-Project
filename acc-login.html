@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Everwear</title>
+
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nothing+You+Could+Do&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="login-page">
+        <h1>Login to Your Account</h1>
+
+        <div class="login-form-container">
+          <form action="#" method="post">
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div class="forgot-password">
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <div class="login-button">
+              <button type="submit">Login</button>
+            </div>
+
+            <div class="signup-link">
+              <p>
+                Don't have an account?
+                <a href="acc-register.html">Sign up here</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="cart-main" id="cartContent"></div>
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+
+    <script src="js/cartContentLoader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

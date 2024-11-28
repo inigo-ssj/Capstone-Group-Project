@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs - Everwear</title>
+
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nothing+You+Could+Do&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="faq-page">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <h2>What is the shipping policy for Everwear?</h2>
+            <p>
+              We offer standard and express shipping to all locations in the
+              Philippines. Orders are processed within 1-2 business days, and
+              delivery typically takes between 3-7 business days depending on
+              your location.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>How do I track my order?</h2>
+            <p>
+              Once your order has been shipped, you will receive a tracking
+              number via email. You can use this tracking number to monitor the
+              progress of your delivery through the courier’s tracking system.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>Can I change my order after it's been placed?</h2>
+            <p>
+              We process orders quickly, but if you wish to make any changes,
+              please contact our support team as soon as possible. We may be
+              able to make changes before the order is shipped, but
+              unfortunately, we cannot guarantee changes once your order is in
+              processing or shipped.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>How do I return an item?</h2>
+            <p>
+              We accept returns on most items within 14 days of delivery,
+              provided the product is unused and in its original packaging.
+              Please visit our
+              <a href="return-refund-policy.html">Return & Refund Policy</a> for
+              more detailed instructions on how to initiate a return.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>Are all items eligible for return or exchange?</h2>
+            <p>
+              Unfortunately, certain items such as accessories or undergarments
+              are non-returnable due to hygiene reasons. Please refer to our
+              <a href="return-refund-policy.html">Return & Refund Policy</a> for
+              a full list of non-returnable items.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>How can I pay for my order?</h2>
+            <p>
+              We accept payments via credit and debit cards, PayPal, and COD
+              (Cash on Delivery) for orders within the Philippines. You can
+              choose your preferred payment method during checkout.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>Do you offer gift cards?</h2>
+            <p>
+              Currently, we do not offer gift cards. However, stay tuned as we
+              may introduce this feature in the future!
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>How do I know what size to choose?</h2>
+            <p>
+              We provide a detailed size chart on each product page. If you’re
+              unsure, we recommend measuring your body dimensions and comparing
+              them with the size guide to choose the best fit.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>Can I cancel my order?</h2>
+            <p>
+              Orders can be canceled within 24 hours of purchase. Please contact
+              our customer service team immediately at
+              <a href="mailto:support@everwear.com">support@everwear.com</a> for
+              assistance.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>I received a damaged or incorrect item. What should I do?</h2>
+            <p>
+              We sincerely apologize for any inconvenience caused. Please
+              contact our customer service team with your order number and
+              photos of the damaged or incorrect item, and we will resolve the
+              issue as quickly as possible by either sending a replacement or
+              issuing a refund.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>Do you offer international shipping?</h2>
+            <p>
+              At this time, we only ship within the Philippines. However, we are
+              planning to expand our shipping options internationally in the
+              future, so stay tuned!
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h2>How can I contact customer service?</h2>
+            <p>
+              You can reach our customer service team by emailing us at
+              <a href="mailto:support@everwear.com">support@everwear.com</a>. We
+              aim to respond to all inquiries within 24-48 hours.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="cart-main" id="cartContent"></div>
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+
+    <script src="js/cartContentLoader.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/wishlistContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation - Everwear</title>
+
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nothing+You+Could+Do&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="order-confirmation">
+        <div class="order-confirmation-content">
+          <h1>Thank You for Your Order!</h1>
+          <p>Your order has been successfully placed.</p>
+
+          <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p><strong>Order ID:</strong> #123456</p>
+            <p><strong>Order Date:</strong> November 20, 2024</p>
+            <p>
+              <strong>Shipping Address:</strong> John Doe, 123 Main Street,
+              Manila, Philippines
+            </p>
+
+            <h3>Items Ordered:</h3>
+            <ul>
+              <li>Dress - $50</li>
+              <li>Jacket - $30</li>
+            </ul>
+
+            <p><strong>Total Amount:</strong> $80</p>
+            <p><strong>Estimated Delivery:</strong> November 25, 2024</p>
+          </div>
+
+          <div class="order-tracking">
+            <h3>Track Your Order</h3>
+            <p>To track your order, click the link below:</p>
+            <a href="#">Track Order</a>
+          </div>
+
+          <div class="customer-support">
+            <h3>Need Help?</h3>
+            <p>
+              If you have any questions about your order, please reach out to
+              our customer support team:
+            </p>
+            <p>
+              Email:
+              <a href="mailto:support@everwear.com">support@everwear.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="cart-main" id="cartContent"></div>
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+
+    <script src="js/cartContentLoader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

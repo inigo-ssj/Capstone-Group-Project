@@ -1,0 +1,144 @@
+.testimonials {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.featured-feedback {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.featured-feedback h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial {
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 0.5rem 0;
+}
+
+.testimonial strong {
+  color: #f5a623;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.reviews-container {
+  margin-bottom: 2rem;
+}
+
+.review-item {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.review-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-item .stars {
+  color: #f5a623;
+  margin-bottom: 0.5rem;
+}
+
+.review-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.review-form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.review-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.review-form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.review-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.rating-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.rating-input .star {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.rating-input .star.selected,
+.rating-input .star:hover,
+.rating-input .star:hover ~ .star {
+  color: #f5a623;
+}
+
+.review-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="nav-bar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Resources/logo/everwear-logo-black.png" alt="ew_logo" />
+      </a>
+    </div>
+
+    <ul class="main-nav">
+      <li class="active">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT US</a>
+      </li>
+    </ul>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search products..."
+        id="search-bar"
+        size="70px"
+        oninput="searchProduct()"
+      />
+      <ul id="searchResult"></ul>
+      <!-- <button class="search-btn" onclick="performSearch()">Search</button> -->
+    </div>
+
+    <ul class="icon-nav">
+      <li class="active shortCutIconLi">
+        <a class="shortCutIcon" href="acc-login.html">
+          <img src="Resources/icons/acc-black.png" alt="" />
+        </a>
+        <a
+          class="shortCutIcon favelist"
+          id="wishlistIcon"
+          onclick="toggleWishlist()"
+        >
+          <img src="Resources/icons/fav-black.png" alt="" />
+          <div class="faveCount" id="wishlistCount">0</div>
+        </a>
+        <a class="shortCutIcon viewCart" onclick="toggleCart()">
+          <img src="Resources/icons/cart-black.png" alt="" />
+          <div class="cartCount" id="cartpage">0</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Wishlist Modal -->
+  <div class="wishlist-modal" id="wishlistModal">
+    <div class="wishlist-header">
+      <h2>Your Wishlist</h2>
+      <button class="close-wishlist" onclick="toggleWishlist()">X</button>
+    </div>
+    <div class="wishlist-content" id="wishlistItems">
+      <!-- Wishlist items will be dynamically inserted here -->
+      <p>Your wishlist is empty.</p>
+      <!-- Placeholder if no items -->
+    </div>
+  </div>
+</div>

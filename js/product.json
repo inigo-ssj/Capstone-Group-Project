@@ -1,0 +1,1088 @@
+[
+  {
+    "id": 1,
+    "name": "Petal Flare Sundress",
+    "price": 120.0,
+    "image": "Resources/product-img/dress/1.jpg",
+    "description": "A flowing sundress with delicate floral patterns, perfect for sunny days.",
+    "details": [
+      "Material: 100% Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 2,
+    "name": "Checkered Chic",
+    "price": 90.0,
+    "image": "Resources/product-img/dress/2.jpg",
+    "description": "A stylish checkered dress for casual outings.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Hand wash recommended",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 3,
+    "name": "Icory Radiance",
+    "price": 110.0,
+    "image": "Resources/product-img/dress/3.jpg",
+    "description": "A sophisticated ivory dress with radiant detailing.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Dry clean only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 4,
+    "name": "Sunset Glow Maxi",
+    "price": 90.0,
+    "image": "Resources/product-img/dress/4.jpg",
+    "description": "A vibrant maxi dress inspired by sunset hues.",
+    "details": [
+      "Material: Rayon",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 5,
+    "name": "Velvet Charm Midi",
+    "price": 140.0,
+    "image": "Resources/product-img/dress/5.jpg",
+    "description": "A luxurious velvet midi dress for formal events.",
+    "details": [
+      "Material: Velvet",
+      "Care Instructions: Spot clean only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 6,
+    "name": "Luxe Grace Shift Dress",
+    "price": 120.0,
+    "image": "Resources/product-img/dress/6.jpg",
+    "description": "A classic shift dress with a modern touch.",
+    "details": [
+      "Material: Silk blend",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 5
+  },
+
+  {
+    "id": 7,
+    "name": "Classic Denim Jacket",
+    "price": 75.0,
+    "image": "Resources/product-img/jacket/1.jpg",
+    "description": "A timeless denim jacket with a modern fit.",
+    "details": [
+      "Material: 100% Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 8,
+    "name": "Puffer Parka",
+    "price": 120.0,
+    "image": "Resources/product-img/jacket/2.jpg",
+    "description": "A cozy puffer parka to keep you warm during winter.",
+    "details": [
+      "Material: Nylon with down filling",
+      "Care Instructions: Hand wash only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 9,
+    "name": "Leather Biker Jacket",
+    "price": 200.0,
+    "image": "Resources/product-img/jacket/3.jpg",
+    "description": "A sleek leather biker jacket for an edgy look.",
+    "details": [
+      "Material: Genuine leather",
+      "Care Instructions: Professional leather cleaning",
+      "Shipping: Free shipping on orders over $100"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 10,
+    "name": "Bomber Jacket",
+    "price": 95.0,
+    "image": "Resources/product-img/jacket/4.jpg",
+    "description": "A trendy bomber jacket for casual wear.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 11,
+    "name": "Wool Blazer",
+    "price": 150.0,
+    "image": "Resources/product-img/jacket/5.jpg",
+    "description": "A sophisticated wool blazer for formal occasions.",
+    "details": [
+      "Material: Wool",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $100"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 12,
+    "name": "Hooded Windbreaker",
+    "price": 60.0,
+    "image": "Resources/product-img/jacket/6.jpg",
+    "description": "A lightweight hooded windbreaker for outdoor adventures.",
+    "details": [
+      "Material: Nylon",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 3
+  },
+
+  {
+    "id": 13,
+    "name": "Slim Fit Chinos",
+    "price": 50.0,
+    "image": "Resources/product-img/pants/1.jpg",
+    "description": "Comfortable slim-fit chinos for everyday wear.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 14,
+    "name": "Relaxed Cargo Pants",
+    "price": 60.0,
+    "image": "Resources/product-img/pants/2.jpg",
+    "description": "Relaxed cargo pants with plenty of storage.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 15,
+    "name": "Formal Trousers",
+    "price": 80.0,
+    "image": "Resources/product-img/pants/3.jpg",
+    "description": "Tailored trousers for a polished look.",
+    "details": [
+      "Material: Polyester blend",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 16,
+    "name": "Jogger Pants",
+    "price": 45.0,
+    "image": "Resources/product-img/pants/4.jpg",
+    "description": "Stylish joggers for athletic or casual wear.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 17,
+    "name": "High-Waisted Pants",
+    "price": 70.0,
+    "image": "Resources/product-img/pants/5.jpg",
+    "description": "High-waisted pants with a flattering fit.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 18,
+    "name": "Straight-Leg Jeans",
+    "price": 65.0,
+    "image": "Resources/product-img/pants/6.jpg",
+    "description": "Classic straight-leg jeans for everyday wear.",
+    "details": [
+      "Material: Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 3
+  },
+
+  {
+    "id": 19,
+    "name": "Basic Crew Neck Tee",
+    "price": 25.0,
+    "image": "Resources/product-img/tshirts/1.jpg",
+    "description": "A versatile crew neck t-shirt, perfect for layering or casual wear.",
+    "details": [
+      "Material: 100% Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 20,
+    "name": "Graphic Print Tee",
+    "price": 30.0,
+    "image": "Resources/product-img/tshirts/2.jpg",
+    "description": "A bold graphic print tee for a trendy look.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 21,
+    "name": "V-Neck T-Shirt",
+    "price": 20.0,
+    "image": "Resources/product-img/tshirts/3.jpg",
+    "description": "A classic V-neck t-shirt for effortless style.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 22,
+    "name": "Oversized Tee",
+    "price": 35.0,
+    "image": "Resources/product-img/tshirts/4.jpg",
+    "description": "A trendy oversized t-shirt for a relaxed fit.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 23,
+    "name": "Pocket Tee",
+    "price": 28.0,
+    "image": "Resources/product-img/tshirts/5.jpg",
+    "description": "A simple t-shirt with a stylish chest pocket.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 24,
+    "name": "Henley T-Shirt",
+    "price": 40.0,
+    "image": "Resources/product-img/tshirts/6.jpg",
+    "description": "A classic Henley t-shirt with button details.",
+    "details": [
+      "Material: 100% Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+
+  {
+    "id": 25,
+    "name": "Casual Chino Shorts",
+    "price": 45.0,
+    "image": "Resources/product-img/shorts/1.jpg",
+    "description": "Comfortable chino shorts for everyday wear.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 26,
+    "name": "Athletic Shorts",
+    "price": 35.0,
+    "image": "Resources/product-img/shorts/2.jpg",
+    "description": "Lightweight athletic shorts for active lifestyles.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 27,
+    "name": "Denim Shorts",
+    "price": 50.0,
+    "image": "Resources/product-img/shorts/3.jpg",
+    "description": "Classic denim shorts with a modern fit.",
+    "details": [
+      "Material: Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 28,
+    "name": "Cargo Shorts",
+    "price": 40.0,
+    "image": "Resources/product-img/shorts/4.jpg",
+    "description": "Utility-inspired cargo shorts with multiple pockets.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 29,
+    "name": "Bermuda Shorts",
+    "price": 38.0,
+    "image": "Resources/product-img/shorts/5.jpg",
+    "description": "Knee-length Bermuda shorts for a polished look.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 30,
+    "name": "Drawstring Lounge Shorts",
+    "price": 30.0,
+    "image": "Resources/product-img/shorts/6.jpg",
+    "description": "Cozy drawstring shorts for lounging or casual outings.",
+    "details": [
+      "Material: Jersey knit",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+
+  {
+    "id": 31,
+    "name": "Classic Baseball Cap",
+    "price": 25.0,
+    "image": "Resources/product-img/cap/1.jpg",
+    "description": "A timeless baseball cap for casual outings.",
+    "details": [
+      "Material: Cotton twill",
+      "Care Instructions: Hand wash only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 32,
+    "name": "Trucker Hat",
+    "price": 20.0,
+    "image": "Resources/product-img/cap/2.jpg",
+    "description": "A breathable trucker hat with mesh panels.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Hand wash only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 33,
+    "name": "Snapback Cap",
+    "price": 30.0,
+    "image": "Resources/product-img/cap/3.jpg",
+    "description": "A modern snapback cap with adjustable fit.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Spot clean",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 34,
+    "name": "Bucket Hat",
+    "price": 35.0,
+    "image": "Resources/product-img/cap/4.jpg",
+    "description": "A trendy bucket hat for sunny days.",
+    "details": [
+      "Material: Canvas",
+      "Care Instructions: Hand wash only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 35,
+    "name": "Wool Flat Cap",
+    "price": 40.0,
+    "image": "Resources/product-img/cap/5.jpg",
+    "description": "A stylish flat cap made of soft wool.",
+    "details": [
+      "Material: Wool",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 36,
+    "name": "Logo Embroidered Cap",
+    "price": 28.0,
+    "image": "Resources/product-img/cap/6.jpg",
+    "description": "A casual cap featuring an embroidered logo.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 3
+  },
+
+  {
+    "id": 37,
+    "name": "Floral Wrap Dress",
+    "price": 130.0,
+    "image": "Resources/product-img/dress/7.jpg",
+    "description": "Elegant wrap dress with a delicate floral print.",
+    "details": [
+      "Material: Rayon",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 38,
+    "name": "Sleeveless Maxi Dress",
+    "price": 150.0,
+    "image": "Resources/product-img/dress/8.jpg",
+    "description": "A flowing sleeveless maxi dress, ideal for summer evenings.",
+    "details": [
+      "Material: Polyester blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 39,
+    "name": "Bohemian Style Dress",
+    "price": 140.0,
+    "image": "Resources/product-img/dress/9.jpg",
+    "description": "Chic bohemian dress with intricate patterns.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Hand wash recommended",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 40,
+    "name": "Vintage Polka Dot Dress",
+    "price": 125.0,
+    "image": "Resources/product-img/dress/10.jpg",
+    "description": "A retro-inspired polka dot dress.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 41,
+    "name": "Lace Evening Dress",
+    "price": 180.0,
+    "image": "Resources/product-img/dress/11.jpg",
+    "description": "Sophisticated evening dress with lace details.",
+    "details": [
+      "Material: Lace and satin",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 42,
+    "name": "Casual Day Dress",
+    "price": 90.0,
+    "image": "Resources/product-img/dress/12.jpg",
+    "description": "Comfortable dress for everyday wear.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "dress",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 43,
+    "name": "Distressed Denim Jacket",
+    "price": 85.0,
+    "image": "Resources/product-img/jacket/7.jpg",
+    "description": "Trendy distressed denim jacket.",
+    "details": [
+      "Material: Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 44,
+    "name": "Faux Leather Jacket",
+    "price": 95.0,
+    "image": "Resources/product-img/jacket/8.jpg",
+    "description": "Stylish faux leather jacket for a modern look.",
+    "details": [
+      "Material: Faux leather",
+      "Care Instructions: Wipe clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 45,
+    "name": "Hooded Parka Jacket",
+    "price": 110.0,
+    "image": "Resources/product-img/jacket/9.jpg",
+    "description": "Warm hooded parka for cold weather.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 46,
+    "name": "Quilted Bomber Jacket",
+    "price": 100.0,
+    "image": "Resources/product-img/jacket/10.jpg",
+    "description": "Lightweight quilted bomber jacket.",
+    "details": [
+      "Material: Nylon",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 47,
+    "name": "Wool Blazer",
+    "price": 120.0,
+    "image": "Resources/product-img/jacket/11.jpg",
+    "description": "Classic wool blazer for formal occasions.",
+    "details": [
+      "Material: Wool",
+      "Care Instructions: Dry clean only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 48,
+    "name": "Cropped Denim Jacket",
+    "price": 70.0,
+    "image": "Resources/product-img/jacket/12.jpg",
+    "description": "Casual cropped denim jacket for a modern style.",
+    "details": [
+      "Material: Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "jacket",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 49,
+    "name": "Relaxed Fit Chinos",
+    "price": 55.0,
+    "image": "Resources/product-img/pants/7.jpg",
+    "description": "Classic relaxed-fit chinos for casual outings.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 50,
+    "name": "Skinny Fit Jeans",
+    "price": 65.0,
+    "image": "Resources/product-img/pants/8.jpg",
+    "description": "Trendy skinny-fit jeans for a sleek look.",
+    "details": [
+      "Material: Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 51,
+    "name": "Cargo Pants",
+    "price": 60.0,
+    "image": "Resources/product-img/pants/9.jpg",
+    "description": "Durable cargo pants with multiple pockets.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 52,
+    "name": "Jogger Pants",
+    "price": 45.0,
+    "image": "Resources/product-img/pants/10.jpg",
+    "description": "Comfortable jogger pants for casual wear.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 53,
+    "name": "Straight Fit Trousers",
+    "price": 70.0,
+    "image": "Resources/product-img/pants/11.jpg",
+    "description": "Classic straight-fit trousers for a polished look.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 54,
+    "name": "Pleated Dress Pants",
+    "price": 80.0,
+    "image": "Resources/product-img/pants/12.jpg",
+    "description": "Sophisticated pleated pants for formal events.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Dry clean only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "pants",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 55,
+    "name": "Graphic Print Tee",
+    "price": 30.0,
+    "image": "Resources/product-img/tshirts/7.jpg",
+    "description": "Trendy t-shirt with a bold graphic print.",
+    "details": [
+      "Material: 100% Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 56,
+    "name": "V-Neck T-Shirt",
+    "price": 20.0,
+    "image": "Resources/product-img/tshirts/8.jpg",
+    "description": "A comfortable and versatile V-neck t-shirt.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 57,
+    "name": "Long Sleeve Tee",
+    "price": 35.0,
+    "image": "Resources/product-img/tshirts/9.jpg",
+    "description": "Soft long sleeve t-shirt for cooler days.",
+    "details": [
+      "Material: 100% Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 58,
+    "name": "Striped Crew Neck Tee",
+    "price": 28.0,
+    "image": "Resources/product-img/tshirts/10.jpg",
+    "description": "Classic striped crew neck t-shirt.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 59,
+    "name": "Oversized T-Shirt",
+    "price": 40.0,
+    "image": "Resources/product-img/tshirts/11.jpg",
+    "description": "Trendy oversized t-shirt for a relaxed fit.",
+    "details": [
+      "Material: Polyester blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 60,
+    "name": "Pocket Tee",
+    "price": 22.0,
+    "image": "Resources/product-img/tshirts/12.jpg",
+    "description": "Simple crew neck t-shirt with a chest pocket.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "tshirts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 61,
+    "name": "Denim Shorts",
+    "price": 40.0,
+    "image": "Resources/product-img/shorts/7.jpg",
+    "description": "Classic denim shorts with a frayed hem.",
+    "details": [
+      "Material: Denim",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 62,
+    "name": "Cotton Lounge Shorts",
+    "price": 30.0,
+    "image": "Resources/product-img/shorts/8.jpg",
+    "description": "Soft cotton lounge shorts for indoor comfort.",
+    "details": [
+      "Material: 100% Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 63,
+    "name": "Bermuda Shorts",
+    "price": 45.0,
+    "image": "Resources/product-img/shorts/9.jpg",
+    "description": "Stylish knee-length Bermuda shorts.",
+    "details": [
+      "Material: Cotton blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 64,
+    "name": "Cargo Shorts",
+    "price": 50.0,
+    "image": "Resources/product-img/shorts/10.jpg",
+    "description": "Durable cargo shorts with plenty of pockets.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 65,
+    "name": "Athleisure Shorts",
+    "price": 38.0,
+    "image": "Resources/product-img/shorts/11.jpg",
+    "description": "Comfortable athleisure shorts for workouts.",
+    "details": [
+      "Material: Polyester blend",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 66,
+    "name": "Printed Shorts",
+    "price": 32.0,
+    "image": "Resources/product-img/shorts/12.jpg",
+    "description": "Fun printed shorts for a unique look.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Machine wash cold",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "shorts",
+    "discount": 0.1,
+    "popularity": 4
+  },
+  {
+    "id": 67,
+    "name": "Snapback Cap",
+    "price": 28.0,
+    "image": "Resources/product-img/cap/7.jpg",
+    "description": "Adjustable snapback cap with a modern design.",
+    "details": [
+      "Material: Cotton twill",
+      "Care Instructions: Hand wash only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 68,
+    "name": "Trucker Hat",
+    "price": 22.0,
+    "image": "Resources/product-img/cap/8.jpg",
+    "description": "Mesh-back trucker hat for a casual style.",
+    "details": [
+      "Material: Polyester and mesh",
+      "Care Instructions: Hand wash only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 5
+  },
+  {
+    "id": 69,
+    "name": "Sports Cap",
+    "price": 30.0,
+    "image": "Resources/product-img/cap/9.jpg",
+    "description": "Lightweight sports cap for outdoor activities.",
+    "details": [
+      "Material: Polyester",
+      "Care Instructions: Hand wash only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 70,
+    "name": "Bucket Hat",
+    "price": 25.0,
+    "image": "Resources/product-img/cap/10.jpg",
+    "description": "Trendy bucket hat for casual wear.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Hand wash only",
+      "Shipping: Standard rates apply"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 3
+  },
+  {
+    "id": 71,
+    "name": "Wide-Brim Cap",
+    "price": 35.0,
+    "image": "Resources/product-img/cap/11.jpg",
+    "description": "Wide-brim cap for extra sun protection.",
+    "details": [
+      "Material: Cotton twill",
+      "Care Instructions: Hand wash only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 2
+  },
+  {
+    "id": 72,
+    "name": "Patterned Cap",
+    "price": 30.0,
+    "image": "Resources/product-img/cap/12.jpg",
+    "description": "Cap with a fun patterned design.",
+    "details": [
+      "Material: Cotton",
+      "Care Instructions: Hand wash only",
+      "Shipping: Free shipping on orders over $50"
+    ],
+    "category": "cap",
+    "discount": 0.1,
+    "popularity": 5
+  }
+]

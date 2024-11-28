@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order History - Everwear</title>
+
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nothing+You+Could+Do&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="order-history-page">
+        <h1>Order History</h1>
+        <div class="order-history-list">
+          <div class="order-item">
+            <h2>Order #12345</h2>
+            <p><strong>Date:</strong> 2024-11-20</p>
+            <p><strong>Status:</strong> Shipped</p>
+            <p><strong>Total:</strong> ₱2,500.00</p>
+            <button class="view-details-btn">View Details</button>
+          </div>
+
+          <div class="order-item">
+            <h2>Order #12346</h2>
+            <p><strong>Date:</strong> 2024-11-18</p>
+            <p><strong>Status:</strong> Delivered</p>
+            <p><strong>Total:</strong> $500.00</p>
+            <button class="view-details-btn">View Details</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="cart-main" id="cartContent"></div>
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+
+    <script src="js/cartContentLoader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

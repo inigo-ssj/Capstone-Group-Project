@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -----------------------------favorite page---------------------------------------- */
+
+.favorites-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 50vh;
+}
+
+.favorites-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.favorites-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.favorites-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.favorites-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  mmargin: 20px auto;
+  padding-left: 40px;
+}
+
+.favorite-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 20rem;
+  max-height: 35rem;
+  border: #333 solid 0.5px;
+}
+
+.favorite-item .frame {
+  max-width: 20rem;
+  max-height: 35rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.favorite-item img {
+  width: 100%;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+  display: block;
+}
+
+.favorite-item-info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.favorite-item-info h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.favorite-item-price {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.remove-btn {
+  padding: 8px 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.favorites-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.shopbtn {
+  padding: 12px 30px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.shopbtn:hover {
+  background-color: #444444;
+}

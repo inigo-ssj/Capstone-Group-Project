@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Details - Everwear</title>
+
+    <link rel="stylesheet" href="css/account.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nothing+You+Could+Do&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="container">
+      <section class="profile-details-page">
+        <h1>Profile Details</h1>
+        <div class="profile-details-form">
+          <div class="form-section">
+            <h2>Personal Information</h2>
+            <form action="#" method="POST">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value="John Doe"
+                required
+              />
+
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="johndoe@example.com"
+                required
+              />
+
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value="+63 912 345 6789"
+              />
+
+              <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+          </div>
+
+          <div class="form-section">
+            <h2>Shipping Address</h2>
+            <form action="#" method="POST">
+              <label for="address">Street Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                value="123 Main St."
+                required
+              />
+
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                value="Quezon City"
+                required
+              />
+
+              <label for="postal">Postal Code</label>
+              <input
+                type="text"
+                id="postal"
+                name="postal"
+                value="1101"
+                required
+              />
+
+              <label for="country">Country</label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                value="Philippines"
+                required
+              />
+
+              <button type="submit" class="save-btn">Save Address</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="cart-main" id="cartContent"></div>
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wishlistContentLoader.js"></script>
+
+    <script src="js/cartContentLoader.js"></script>
+    <script>
+      setTimeout(addCartToHTML, 2000);
+
+      setTimeout(updateWishlistCount, 2000);
+    </script>
+  </body>
+</html>

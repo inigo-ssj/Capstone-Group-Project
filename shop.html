@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Everwear</title>
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/checkoutcart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main class="container">
+      <section class="shop-section">
+        <div class="filters">
+          <h2>Filters</h2>
+          <h3>Categories</h3>
+          <ul>
+            <li><button onclick="filterByCategory('all')">All</button></li>
+            <li><button onclick="filterByCategory('cap')">Caps</button></li>
+            <li>
+              <button onclick="filterByCategory('dress')">Dresses</button>
+            </li>
+            <li>
+              <button onclick="filterByCategory('jacket')">Jackets</button>
+            </li>
+            <li>
+              <button onclick="filterByCategory('shorts')">Shorts</button>
+            </li>
+            <li><button onclick="filterByCategory('pants')">Pants</button></li>
+            <li>
+              <button onclick="filterByCategory('tshirts')">T-Shirts</button>
+            </li>
+          </ul>
+          <h3>Sort By</h3>
+          <select id="sortDropdown" onchange="sortProducts()">
+            <option value="latest">Latest Additions</option>
+            <option value="priceLowHigh">Price: Low to High</option>
+            <option value="priceHighLow">Price: High to Low</option>
+            <option value="popularity">Popularity</option>
+          </select>
+        </div>
+
+        <div class="product-listing" id="products-container"></div>
+      </section>
+    </main>
+    <div class="cart-main" id="cartContent"></div>
+
+    <footer id="footer"></footer>
+    <script src="js/headerFooterLoader.js"></script>
+    <script src="js/cartContentLoader.js"></script>
+
+    <script src="js/wishlistContentLoader.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
