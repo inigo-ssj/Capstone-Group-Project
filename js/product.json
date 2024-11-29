@@ -12,7 +12,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 3,
@@ -42,7 +44,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 4,
@@ -57,7 +60,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 5,
@@ -72,7 +76,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 6,
@@ -87,7 +92,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
 
   {
@@ -103,7 +109,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 8,
@@ -118,7 +125,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 9,
@@ -133,7 +141,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 10,
@@ -148,7 +157,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 11,
@@ -163,7 +173,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 12,
@@ -178,7 +189,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
 
   {
@@ -194,7 +206,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 14,
@@ -209,7 +222,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 15,
@@ -224,7 +238,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 16,
@@ -239,7 +254,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 17,
@@ -254,7 +270,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 18,
@@ -269,7 +286,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
 
   {
@@ -285,7 +303,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 20,
@@ -300,7 +319,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 21,
@@ -315,7 +335,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 22,
@@ -330,7 +351,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 23,
@@ -345,7 +367,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 24,
@@ -360,7 +383,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
 
   {
@@ -376,7 +400,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 26,
@@ -391,7 +416,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 27,
@@ -406,7 +432,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 28,
@@ -421,7 +448,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 29,
@@ -436,7 +464,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 30,
@@ -451,7 +480,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
 
   {
@@ -467,7 +497,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 32,
@@ -482,7 +513,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 33,
@@ -497,7 +529,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 34,
@@ -512,7 +545,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 35,
@@ -527,7 +561,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 36,
@@ -542,7 +577,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
 
   {
@@ -558,7 +594,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 38,
@@ -573,7 +610,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 39,
@@ -588,7 +626,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 40,
@@ -603,7 +642,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 41,
@@ -618,7 +658,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 42,
@@ -633,7 +674,8 @@
     ],
     "category": "dress",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 43,
@@ -648,7 +690,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 44,
@@ -663,7 +706,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 45,
@@ -678,7 +722,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 46,
@@ -693,7 +738,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 47,
@@ -708,7 +754,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 48,
@@ -723,7 +770,8 @@
     ],
     "category": "jacket",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 49,
@@ -738,7 +786,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 50,
@@ -753,7 +802,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 51,
@@ -768,7 +818,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 52,
@@ -783,7 +834,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 53,
@@ -798,7 +850,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 54,
@@ -813,7 +866,8 @@
     ],
     "category": "pants",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 55,
@@ -828,7 +882,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 56,
@@ -843,7 +898,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 57,
@@ -858,7 +914,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 58,
@@ -873,7 +930,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 59,
@@ -888,7 +946,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 60,
@@ -903,7 +962,8 @@
     ],
     "category": "tshirts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 61,
@@ -918,7 +978,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 62,
@@ -933,7 +994,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 63,
@@ -948,7 +1010,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 64,
@@ -963,7 +1026,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 65,
@@ -978,7 +1042,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 66,
@@ -993,7 +1058,8 @@
     ],
     "category": "shorts",
     "discount": 0.1,
-    "popularity": 4
+    "popularity": 4,
+    "isDiscounted": false
   },
   {
     "id": 67,
@@ -1008,7 +1074,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 68,
@@ -1023,7 +1090,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   },
   {
     "id": 69,
@@ -1038,7 +1106,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 70,
@@ -1053,7 +1122,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 3
+    "popularity": 3,
+    "isDiscounted": false
   },
   {
     "id": 71,
@@ -1068,7 +1138,8 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 2
+    "popularity": 2,
+    "isDiscounted": false
   },
   {
     "id": 72,
@@ -1083,6 +1154,7 @@
     ],
     "category": "cap",
     "discount": 0.1,
-    "popularity": 5
+    "popularity": 5,
+    "isDiscounted": false
   }
 ]

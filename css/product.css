@@ -68,3 +68,16 @@
   padding: 10px;
   color: #444;
 }
+.add-to-cart,
+.add-to-wishlist {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-cart img,
+.add-to-wishlist img {
+  width: 24px;
+  height: auto;
+}
