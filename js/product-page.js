@@ -78,3 +78,5 @@ document.addEventListener("DOMContentLoaded", () => {
     productImage.style.transform = "scale(1)"; // Reset scale
   });
 });
+
+//to follow

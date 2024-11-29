@@ -107,11 +107,11 @@ function renderDealsProducts(containerId, dealsProducts) {
          <button class="add-to-cart" onclick="addToCart(${product.id})">
           <img src="Resources/icons/addtocart-black.png" alt="Add to Cart Icon" />
         </button>
-        <button class="add-to-wishlist" id = "" onclick="addToWishlist(${
-          product.id
-        })">
+         <button class="add-to-wishlist" id="wishlist${
+           product.id
+         }" onclick="addToWishlist(${product.id})">
           <img src="Resources/icons/fav-black.png" alt="Favorite Icon" />
-        </button>
+          </button>
       </div>
     `;
     })
