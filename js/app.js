@@ -65,7 +65,7 @@ function createProductCard(product) {
             <img src="${product.image}" alt="${product.name}" class="product-image" />
           </div>
           <h3 class="product-name">${product.name}</h3>
-          <p class="product-price">$${product.price}</p>
+          ${priceSpan}
           </a>
       <div>
           <button class="add-to-cart" onclick="addToCart(${product.id})">

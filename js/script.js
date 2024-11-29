@@ -9,7 +9,7 @@ fetch("js/product.json")
   .then((response) => response.json())
   .then((data) => {
     products = data;
-
+    const pageScreen = window.location.pathname;
     products.map((product) => {
       if (!categories.includes(product.category)) {
         categories.push(product.category);
@@ -30,10 +30,14 @@ fetch("js/product.json")
     );
 
     setProductDiscount();
-    renderProducts("featured-products", featuredProducts);
-    renderDealsProducts("deals-products", dealsProducts); // New function for deals
-    setTimeout(addCartToHTML, 3000);
-    setTimeout(updateWishlistCount, 3000);
+    if (pageScreen.includes("product-page.html")) {
+      setProductDetails();
+    } else {
+      renderProducts("featured-products", featuredProducts);
+      renderDealsProducts("deals-products", dealsProducts); // New function for deals
+      setTimeout(addCartToHTML, 3000);
+      setTimeout(updateWishlistCount, 3000);
+    }
   });
 
 function setProductDiscount(filter = "all") {
@@ -69,11 +73,11 @@ function renderProducts(containerId, selectedProducts) {
         <button class="add-to-cart" onclick="addToCart(${product.id})">
           <img src="Resources/icons/addtocart-black.png" alt="Add to Cart Icon" />
         </button>
-        <button class="add-to-wishlist" id = "" onclick="addToWishlist(${
+        <button class="add-to-wishlist" id="wishlist${
           product.id
-        })">
+        }" onclick="addToWishlist(${product.id})">
           <img src="Resources/icons/fav-black.png" alt="Favorite Icon" />
-        </button>
+          </button>
       </div>
     `
     )
@@ -103,11 +107,11 @@ function renderDealsProducts(containerId, dealsProducts) {
          <button class="add-to-cart" onclick="addToCart(${product.id})">
           <img src="Resources/icons/addtocart-black.png" alt="Add to Cart Icon" />
         </button>
-        <button class="add-to-wishlist" id = "" onclick="addToWishlist(${
-          product.id
-        })">
+         <button class="add-to-wishlist" id="wishlist${
+           product.id
+         }" onclick="addToWishlist(${product.id})">
           <img src="Resources/icons/fav-black.png" alt="Favorite Icon" />
-        </button>
+          </button>
       </div>
     `;
     })

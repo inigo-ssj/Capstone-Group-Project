@@ -1,45 +1,48 @@
-// Fetch product data and populate product details
-fetch("js/product.json")
-  .then((response) => response.json())
-  .then((products) => {
-    // Get the product ID from the URL query string
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get("id");
+// Get the product ID from the URL query string
+function setProductDetails() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get("id");
 
-    // Find the product by ID
-    const product = products.find((product) => product.id == productId);
+  // Find the product by ID
+  const product = products.find((product) => product.id == productId);
 
-    if (product) {
-      // Populate product details on the page
-      document.getElementById("product-page-image").src = product.image;
-      document.getElementById("product-title").textContent = product.name;
-      document.getElementById("product-description").textContent =
-        product.description;
-      document.getElementById("product-price").textContent = `$${product.price}`;
-      document.getElementById("product-details-list").innerHTML =
-        product.details.map((detail) => `<li>${detail}</li>`).join("");
+  if (product) {
+    let discountedPrice = setProductPrice(product.price, product.isDiscounted);
+    let priceSpan = setProductPriceSpan(
+      product.isDiscounted,
+      discountedPrice,
+      product.price
+    );
+    // Populate product details on the page
+    document.getElementById("product-page-image").src = product.image;
+    document.getElementById("product-title").textContent = product.name;
+    document.getElementById("product-description").textContent =
+      product.description;
+    document.getElementById("product-price").innerHTML = priceSpan;
+    document.getElementById("product-details-list").innerHTML = product.details
+      .map((detail) => `<li>${detail}</li>`)
+      .join("");
 
-      // Hook up the Add to Cart button
-      document.querySelector(".add-to-cart").addEventListener("click", () => {
-        addToCart(product.id); // Use the existing global function
-      });
+    // Hook up the Add to Cart button
+    document.querySelector(".add-to-cart").addEventListener("click", () => {
+      addToCart(product.id); // Use the existing global function
+    });
 
-      // Hook up the Add to Wishlist button
-      const wishlistButton = document.querySelector(".add-to-wishlist");
-      wishlistButton.id = `wishlist${product.id}`; // Assign the correct ID
-      wishlistButton.addEventListener("click", () => {
-        addToWishlist(product.id); // Use the existing global function
-      });
+    // Hook up the Add to Wishlist button
+    const wishlistButton = document.querySelector(".add-to-wishlist");
+    wishlistButton.id = `wishlist${product.id}`; // Assign the correct ID
+    wishlistButton.addEventListener("click", () => {
+      addToWishlist(product.id); // Use the existing global function
+    });
 
-      // Update wishlist icon based on the current state
-      updateWishlistIcon(product.id, wishlistButton);
-    } else {
-      // If the product doesn't exist, show an error or redirect
-      document.querySelector(".product-container").innerHTML =
-        "<h2>Product not found</h2>";
-    }
-  })
-  .catch((error) => console.error("Error fetching product data:", error));
+    // Update wishlist icon based on the current state
+    updateWishlistIcon(product.id, wishlistButton);
+  } else {
+    // If the product doesn't exist, show an error or redirect
+    document.querySelector(".product-container").innerHTML =
+      "<h2>Product not found</h2>";
+  }
+}
 
 // Update wishlist icon based on whether the product is in the wishlist
 function updateWishlistIcon(productId, button) {
@@ -50,8 +53,6 @@ function updateWishlistIcon(productId, button) {
     productImg.src = "Resources/icons/fav-black.png"; // Not in wishlist
   }
 }
-
-
 
 // Zoom effect for the product image
 document.addEventListener("DOMContentLoaded", () => {
@@ -77,3 +78,5 @@ document.addEventListener("DOMContentLoaded", () => {
     productImage.style.transform = "scale(1)"; // Reset scale
   });
 });
+
+//to follow
