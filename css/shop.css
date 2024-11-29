@@ -196,10 +196,6 @@
   right: 30px;
 }
 
-.add-to-wishlist button img::after {
-  src: url(../Resources/icons/fav-black-toggled.png);
-}
-
 /* -------------hover effect----------------- */
 
 .product-card button {

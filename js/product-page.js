@@ -1,4 +1,4 @@
-// Fetch product data
+// Fetch product data and populate product details
 fetch("js/product.json")
   .then((response) => response.json())
   .then((products) => {
@@ -10,19 +10,29 @@ fetch("js/product.json")
     const product = products.find((product) => product.id == productId);
 
     if (product) {
-      // Populate the product details on the page
+      // Populate product details on the page
       document.getElementById("product-page-image").src = product.image;
       document.getElementById("product-title").textContent = product.name;
       document.getElementById("product-description").textContent =
         product.description;
-      document.getElementById(
-        "product-price"
-      ).textContent = `$${product.price}`;
+      document.getElementById("product-price").textContent = `$${product.price}`;
       document.getElementById("product-details-list").innerHTML =
         product.details.map((detail) => `<li>${detail}</li>`).join("");
 
-      const addToCartButton = document.querySelector(".add-to-cart");
-      addToCartButton.addEventListener("click", () => addToCart(product.id));
+      // Hook up the Add to Cart button
+      document.querySelector(".add-to-cart").addEventListener("click", () => {
+        addToCart(product.id); // Use the existing global function
+      });
+
+      // Hook up the Add to Wishlist button
+      const wishlistButton = document.querySelector(".add-to-wishlist");
+      wishlistButton.id = `wishlist${product.id}`; // Assign the correct ID
+      wishlistButton.addEventListener("click", () => {
+        addToWishlist(product.id); // Use the existing global function
+      });
+
+      // Update wishlist icon based on the current state
+      updateWishlistIcon(product.id, wishlistButton);
     } else {
       // If the product doesn't exist, show an error or redirect
       document.querySelector(".product-container").innerHTML =
@@ -31,9 +41,20 @@ fetch("js/product.json")
   })
   .catch((error) => console.error("Error fetching product data:", error));
 
-// -------------------------------------------------------------------
+// Update wishlist icon based on whether the product is in the wishlist
+function updateWishlistIcon(productId, button) {
+  const productImg = button.querySelector("img");
+  if (wishlist.includes(productId)) {
+    productImg.src = "Resources/icons/fav-black-toggled.png"; // Already in wishlist
+  } else {
+    productImg.src = "Resources/icons/fav-black.png"; // Not in wishlist
+  }
+}
 
-document.addEventListener("DOMContentLoaded", function () {
+
+
+// Zoom effect for the product image
+document.addEventListener("DOMContentLoaded", () => {
   const imageContainer = document.querySelector(".product-page-image");
   const productImage = imageContainer.querySelector("#product-page-image");
 
