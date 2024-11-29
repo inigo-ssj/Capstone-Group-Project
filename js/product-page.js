@@ -1,8 +1,5 @@
-// Fetch product data and populate product details
-fetch("js/product.json")
-  .then((response) => response.json())
-  .then((products) => {
-    // Get the product ID from the URL query string
+// Get the product ID from the URL query string
+function setProductDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get("id");
 
@@ -10,12 +7,18 @@ fetch("js/product.json")
     const product = products.find((product) => product.id == productId);
 
     if (product) {
+      let discountedPrice = setProductPrice(product.price, product.isDiscounted);
+      let priceSpan = setProductPriceSpan(
+        product.isDiscounted,
+        discountedPrice,
+        product.price
+      );
       // Populate product details on the page
       document.getElementById("product-page-image").src = product.image;
       document.getElementById("product-title").textContent = product.name;
       document.getElementById("product-description").textContent =
         product.description;
-      document.getElementById("product-price").textContent = `$${product.price}`;
+      document.getElementById("product-price").innerHTML = priceSpan;
       document.getElementById("product-details-list").innerHTML =
         product.details.map((detail) => `<li>${detail}</li>`).join("");
 
@@ -38,8 +41,7 @@ fetch("js/product.json")
       document.querySelector(".product-container").innerHTML =
         "<h2>Product not found</h2>";
     }
-  })
-  .catch((error) => console.error("Error fetching product data:", error));
+  }
 
 // Update wishlist icon based on whether the product is in the wishlist
 function updateWishlistIcon(productId, button) {

@@ -9,7 +9,7 @@ fetch("js/product.json")
   .then((response) => response.json())
   .then((data) => {
     products = data;
-
+    const pageScreen = window.location.pathname;
     products.map((product) => {
       if (!categories.includes(product.category)) {
         categories.push(product.category);
@@ -30,10 +30,14 @@ fetch("js/product.json")
     );
 
     setProductDiscount();
-    renderProducts("featured-products", featuredProducts);
-    renderDealsProducts("deals-products", dealsProducts); // New function for deals
-    setTimeout(addCartToHTML, 3000);
-    setTimeout(updateWishlistCount, 3000);
+    if (pageScreen.includes("product-page.html")) {
+      setProductDetails();
+    } else {
+      renderProducts("featured-products", featuredProducts);
+      renderDealsProducts("deals-products", dealsProducts); // New function for deals
+      setTimeout(addCartToHTML, 3000);
+      setTimeout(updateWishlistCount, 3000);
+    }
   });
 
 function setProductDiscount(filter = "all") {
