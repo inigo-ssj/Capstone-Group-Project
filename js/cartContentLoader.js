@@ -109,12 +109,21 @@ function addCartToHTML() {
   if (listCart) {
     listCart.forEach((product) => {
       if (product) {
+        let discountedPrice = setProductPrice(
+          product.price,
+          product.isDiscounted
+        );
+        let priceSpan = setProductPriceSpan(
+          product.isDiscounted,
+          discountedPrice,
+          product.price
+        );
         let newCart = document.createElement("div");
         newCart.classList.add("item");
         newCart.innerHTML = `<img src="${product.image}">
                   <div class="content">
                       <div class="name">${product.name}</div>
-                      <div class="price">$${product.price}</div>
+                        ${priceSpan}
                   </div>
                   <div class="quantity">
                       <button onclick="changeQuantity(${product.id}, '-')">-</button>
