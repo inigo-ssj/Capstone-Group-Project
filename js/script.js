@@ -1,11 +1,21 @@
 let products = null;
-const categories = ["cap", "dress", "jacket", "shorts", "pants", "tshirts"];
+let discountCategoryCount = {};
+let categories = [];
+
+const categoryDiscountCount = 3;
 const discountPercentage = 20; // 20% discount
 
 fetch("js/product.json")
   .then((response) => response.json())
   .then((data) => {
     products = data;
+
+    products.map((product) => {
+      if (!categories.includes(product.category)) {
+        categories.push(product.category);
+        discountCategoryCount[product.category] = 0;
+      }
+    });
 
     const featuredProducts = getOnePerCategory(products, categories);
     const dealsProducts = categories.map(
@@ -19,11 +29,29 @@ fetch("js/product.json")
           .sort((a, b) => b.popularity - a.popularity)[0]
     );
 
+    setProductDiscount();
     renderProducts("featured-products", featuredProducts);
     renderDealsProducts("deals-products", dealsProducts); // New function for deals
     setTimeout(addCartToHTML, 3000);
     setTimeout(updateWishlistCount, 3000);
   });
+
+function setProductDiscount(filter = "all") {
+  products.forEach((product) => {
+    if (
+      discountCategoryCount[product.category] < categoryDiscountCount &&
+      randomBoolean()
+    ) {
+      discountCategoryCount[product.category] =
+        discountCategoryCount[product.category] + 1;
+      product.isDiscounted = true;
+    }
+  });
+}
+
+function randomBoolean() {
+  return Math.floor(Math.random() * 2) == 0;
+}
 
 function renderProducts(containerId, selectedProducts) {
   const container = document.getElementById(containerId);
@@ -31,12 +59,21 @@ function renderProducts(containerId, selectedProducts) {
     .map(
       (product) => `
       <div class="product-card">
-        <img src="${product.image}" alt="${
+        <a href="product-page.html">
+          <img src="${product.image}" alt="${
         product.name
       }" class="product-image" />
+        </a>
         <h3 class="product-name">${product.name}</h3>
         <p class="product-price">$${product.price.toFixed(2)}</p>
-        <a href="shop.html" class="view-product-btn">View More</a>
+        <button class="add-to-cart" onclick="addToCart(${product.id})">
+          <img src="Resources/icons/addtocart-black.png" alt="Add to Cart Icon" />
+        </button>
+        <button class="add-to-wishlist" id = "" onclick="addToWishlist(${
+          product.id
+        })">
+          <img src="Resources/icons/fav-black.png" alt="Favorite Icon" />
+        </button>
       </div>
     `
     )
@@ -63,7 +100,14 @@ function renderDealsProducts(containerId, dealsProducts) {
           )}</span> 
           <span class="discounted-price" style="color: red;">$${discountedPrice}</span>
         </p>
-        <a href="shop.html" class="view-product-btn">View More</a>
+         <button class="add-to-cart" onclick="addToCart(${product.id})">
+          <img src="Resources/icons/addtocart-black.png" alt="Add to Cart Icon" />
+        </button>
+        <button class="add-to-wishlist" id = "" onclick="addToWishlist(${
+          product.id
+        })">
+          <img src="Resources/icons/fav-black.png" alt="Favorite Icon" />
+        </button>
       </div>
     `;
     })

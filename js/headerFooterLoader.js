@@ -39,54 +39,81 @@ function setEventListenert() {
     cart.style.right = "-100%";
     container.style.transform = "translateX(0)";
   });
-
-
 }
 
 function searchProduct() {
   const path = window.location.pathname;
   let searchItem = document.getElementById("search-bar").value;
-  let isShop = (path.includes("shop.html")) ? true : false;
-   
-    const filteredProducts =
-    searchItem === "all" || searchItem === "" ? products : products.filter((p) =>  (p.category.includes(searchItem)|| p.name.includes(searchItem)));
-    if(isShop) {
-      productsContainer.innerHTML = "";
-      if(filteredProducts.length < 1 ) {
-        productsContainer.innerHTML = "No product found.";
-      } else {
-        if(path.includes("shop.html")) {
-          filteredProducts.forEach((product) => {
-            const productCard = createProductCard(product);
-            productsContainer.appendChild(productCard);
-          });
-        } 
-      }
+  let isShop = path.includes("shop.html") ? true : false;
+
+  const filteredProducts =
+    searchItem === "all" || searchItem === ""
+      ? products
+      : products.filter(
+          (p) =>
+            p.category.toLowerCase().includes(searchItem.toLowerCase()) ||
+            p.name.toLowerCase().includes(searchItem.toLowerCase())
+        );
+  if (isShop) {
+    productsContainer.innerHTML = "";
+    if (filteredProducts.length < 1) {
+      productsContainer.innerHTML = "No product found.";
     } else {
-      const searchRes = document.getElementById("searchResult");
-      if(searchItem === "") {
-        searchResult.innerHTML ="";
-      } else {
-        if(filteredProducts.length < 1 && searchItem !== "") {
-          searchRes.innerHTML = "No product found";
-        } else {
-          searchResult.innerHTML ="";
-          filteredProducts.forEach((product) => {
-            const prodLi = createSearchResultInput(product);
-            prodLi.addEventListener("click", function(e) {
-              window.open("product-page.html?id="+product.id, "_self");  
-            });
-            searchRes.appendChild(prodLi);
-          });
-        }
+      if (path.includes("shop.html")) {
+        filteredProducts.forEach((product) => {
+          const productCard = createProductCard(product);
+          productsContainer.appendChild(productCard);
+        });
       }
     }
+  } else {
+    const searchRes = document.getElementById("searchResult");
+    if (searchItem === "") {
+      searchResult.innerHTML = "";
+    } else {
+      if (filteredProducts.length < 1 && searchItem !== "") {
+        searchRes.innerHTML = "No product found";
+      } else {
+        searchResult.innerHTML = "";
+        filteredProducts.forEach((product) => {
+          const prodLi = createSearchResultInput(product);
+          prodLi.addEventListener("click", function (e) {
+            window.open("product-page.html?id=" + product.id, "_self");
+          });
+          searchRes.appendChild(prodLi);
+        });
+      }
+    }
+  }
 }
 function createSearchResultInput(product) {
-  let prodLi = document.createElement('li');
+  let prodLi = document.createElement("li");
+  let discountedPrice = setProductPrice(product.price, product.isDiscounted);
+  let priceSpan = setProductPriceSpan(
+    product.isDiscounted,
+    discountedPrice,
+    product.price
+  );
   prodLi.innerHTML = `<img src="${product.image}" alt="${product.name}">
-      <div class="prodName" value="${product.id}"> ${product.name} </div> <div class = "price"> $${product.price} </div>`;
+      <div class="prodName" value="${product.id}"> ${product.name} </div> ${priceSpan}`;
   return prodLi;
+}
+
+function setProductPrice(price, isDiscounted) {
+  return isDiscounted
+    ? price - (price * discountPercentage) / 100
+    : price.toFixed(2);
+}
+
+function setProductPriceSpan(isDiscounted, discountedPrice, price) {
+  if (isDiscounted) {
+    return `<span class="original-price" style="text-decoration: line-through; color: gray;">$${price.toFixed(
+      2
+    )}</span> 
+          <span class="discounted-price" style="color: red;">$${discountedPrice}</span>`;
+  } else {
+    return `<span class="discounted-price" style="color: gray;">$${price}</span>`;
+  }
 }
 function toggleCart() {
   const cartModal = document.getElementById("cartModal");
