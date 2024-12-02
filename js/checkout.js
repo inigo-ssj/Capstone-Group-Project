@@ -9,6 +9,7 @@ function checkCart() {
 checkCart();
 setTimeout(checkoutCounter, 2000);
 setTimeout(addCartToHTML, 2000);
+setTimeout(updateWishlistCount, 2000);
 function checkoutCounter() {
   // clear data default
   //   let listCartHTML = document.querySelector(".returnCart .list");
@@ -29,16 +30,22 @@ function checkoutCounter() {
         let c3 = row.insertCell(2);
         let c4 = row.insertCell(3);
 
+        const discountedPrice = setProductPrice(
+          product.price,
+          product.isDiscounted
+        );
         c1.innerText = product.name;
-        c2.innerText = product.price;
+        c2.innerText = "$" + discountedPrice;
         c3.innerText = product.quantity;
-        c4.innerText = product.price * product.quantity;
+        c4.innerText = "$" + discountedPrice * product.quantity;
 
         totalQuantity = totalQuantity + product.quantity;
-        totalPrice = totalPrice + product.price * product.quantity;
+        totalPrice = totalPrice + discountedPrice * product.quantity;
       }
     });
   }
   totalQuantityHTML.innerText = totalQuantity;
   totalPriceHTML.innerText = "$" + totalPrice.toFixed(2);
 }
+
+//to follow

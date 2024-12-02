@@ -1,10 +1,4 @@
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-function updateWishlistCount() {
-  const wishlistCountElement = document.getElementById("wishlistCount");
-  wishlistCountElement.textContent = wishlist.length;
-  disableWishList();
-}
 
 function addToWishlist(productId) {
   const productBtn = document.getElementById("wishlist" + productId);
@@ -40,14 +34,22 @@ function disableWishList(productId = null) {
   let productBtn = null;
   if (productId != null) {
     productBtn = document.getElementById("wishlist" + productId);
-    productBtn.disabled = false;
+    if (productBtn) {
+      const productImg = productBtn.querySelector("img");
+      if (productImg) {
+        productImg.src = "Resources/icons/fav-black-toggled.png";
+      }
+    }
   } else {
     wishlist.forEach((listProdId) => {
       const product = products.find((p) => p.id === listProdId);
       if (product) {
         productBtn = document.getElementById("wishlist" + product.id);
         if (typeof productBtn !== "undefined" && productBtn !== null) {
-          productBtn.disabled = false;
+          const productImg = productBtn.querySelector("img");
+          if (productImg) {
+            productImg.src = "Resources/icons/fav-black-toggled.png";
+          }
         }
       }
     });
