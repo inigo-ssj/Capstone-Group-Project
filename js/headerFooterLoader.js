@@ -64,6 +64,7 @@ function searchProduct() {
           const productCard = createProductCard(product);
           productsContainer.appendChild(productCard);
         });
+        disableWishList();
       }
     }
   } else {
@@ -121,36 +122,5 @@ function toggleCart() {
     cartModal.style.right = "-400px"; // Hide cart
   } else {
     cartModal.style.right = "0px"; // Show cart
-    addCartToHTML(); // Populate items when showing
   }
-}
-
-// Function to clear the cart (if needed)
-function clearCart() {
-  // Logic to clear items from cart
-  listCart = []; // Assuming listCart holds your cart items
-  localStorage.removeItem("listCart"); // Clear from localStorage if used
-  addCartToHTML(); // Refresh displayed items
-}
-
-// Function to populate cart items (similar to addCartToHTML)
-function addCartToHTML() {
-  const listCartHTML = document.querySelector(".listCart");
-  listCartHTML.innerHTML = ""; // Clear previous items
-
-  if (listCart.length === 0) {
-    listCartHTML.innerHTML = "<p>Your cart is empty.</p>";
-    return;
-  }
-
-  listCart.forEach((product) => {
-    const itemDiv = document.createElement("div");
-    itemDiv.classList.add("item");
-    itemDiv.innerHTML = `
-          <img src="${product.image}" alt="${product.name}">
-          <span>${product.name}</span>
-          <span>${product.quantity}</span>
-      `;
-    listCartHTML.appendChild(itemDiv);
-  });
 }
