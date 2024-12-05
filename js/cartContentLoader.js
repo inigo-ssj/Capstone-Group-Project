@@ -79,7 +79,7 @@ function addCartToHTML() {
         newCart.classList.add("item");
         newCart.innerHTML = `<img src="${product.image}">
                   <div class="content">
-                      <div class="name">${product.name}</div>
+                      <div class="name" onclick="viewPageProduct(${product.id})">${product.name}</div>
                         ${priceSpan}
                   </div>
                   <div class="quantity">
@@ -87,6 +87,7 @@ function addCartToHTML() {
                       <span class="value">${product.quantity}</span>
                       <button onclick="changeQuantity(${product.id}, '+')">+</button>
                   </div>`;
+
         listCartHTML.appendChild(newCart);
         totalQuantity = totalQuantity + product.quantity;
       }

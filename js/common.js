@@ -34,6 +34,9 @@ if (products == null) {
   renderInitPage();
 }
 
+function viewPageProduct(productId) {
+  window.open("product-page.html?id=" + productId, "_self");
+}
 function updateWishlistCount() {
   const wishlistCountElement = document.getElementById("wishlistCount");
   wishlistCountElement.textContent = wishlist.length;

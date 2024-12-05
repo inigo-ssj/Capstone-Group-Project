@@ -1,5 +1,3 @@
-
-
 function addToWishlist(productId) {
   const productBtn = document.getElementById("wishlist" + productId);
   const productImg = productBtn.querySelector("img");
@@ -76,11 +74,20 @@ function displayWishlistItems() {
     wishlist.forEach((productId) => {
       const product = products.find((p) => p.id === productId); // Assuming products is your product list
       if (product) {
+        let discountedPrice = setProductPrice(
+          product.price,
+          product.isDiscounted
+        );
+        let priceSpan = setProductPriceSpan(
+          product.isDiscounted,
+          discountedPrice,
+          product.price
+        );
         const itemDiv = document.createElement("div");
         itemDiv.classList.add("wishlist-item");
         itemDiv.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
-                <span>${product.name}</span>
+                <div class="content"> <div>${product.name}</div>  ${priceSpan} </div> 
                 <button class="remove-button" onclick='removeFromWishlist(${productId})'>Remove</button>
             `;
         wishlistItemsContainer.appendChild(itemDiv);
@@ -93,14 +100,17 @@ function displayWishlistItems() {
 function removeFromWishlist(productId) {
   wishlist = wishlist.filter((id) => id !== productId);
   localStorage.setItem("wishlist", JSON.stringify(wishlist)); // Update localStorage
-
-  const productBtn = document.getElementById("wishlist" + productId);
-  const productImg = productBtn.querySelector("img");
-  productBtn.disabled = false;
-  productImg.src = "Resources/icons/fav-black.png";
-
+  enableWishListBtn(productId);
   updateWishlistCount();
   displayWishlistItems(); // Refresh displayed items
+}
+
+function enableWishListBtn(productId) {
+  const productBtn = document.getElementById("wishlist" + productId);
+  if (productBtn) {
+    const productImg = productBtn.querySelector("img");
+    productImg.src = "Resources/icons/fav-black.png";
+  }
 }
 
 // Load wishlist from local storage on page load
