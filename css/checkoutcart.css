@@ -46,6 +46,9 @@
   gap: 20px;
   margin-bottom: 20px;
 }
+.cart-main .listCart .item .content {
+  cursor: pointer;
+}
 .cart-main .listCart img {
   width: 100%;
   height: 70px;

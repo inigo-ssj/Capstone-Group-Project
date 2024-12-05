@@ -28,6 +28,14 @@ function setProductDetails() {
       addToCart(product.id); // Use the existing global function
     });
 
+    document.querySelector(".buy-now").addEventListener("click", () => {
+      const quantity = document.getElementById("quantity").value;
+      window.open(
+        "cart-checkout.html?product_id=" + product.id + "&quantity=" + quantity,
+        "_self"
+      ); // Use the existing global function
+    });
+
     // Hook up the Add to Wishlist button
     const wishlistButton = document.querySelector(".add-to-wishlist");
     wishlistButton.id = `wishlist${product.id}`; // Assign the correct ID
