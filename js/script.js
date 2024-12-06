@@ -27,17 +27,21 @@ function renderHomeProducts(containerId, productList) {
       );
       return `
       <div class="product-card">
-        <a href="./product-page.html?id=${product.id}"><img src="${product.image}" alt="${product.name}" class="product-image" /></a>
-        <h3 class="product-name">${product.name}</h3>
-        <p class="product-price">
-        ${priceSpan}
-        </p>
-         <button class="add-to-cart" onclick="addToCart(${product.id})">
+        <a href="./product-page.html?id=${product.id}">
+          <div class="frame">
+            <img src="${product.image}" alt="${product.name}" class="product-image" />
+          </div>
+          <h3 class="product-name">${product.name}</h3>
+          ${priceSpan}
+          </a>
+      <div>
+          <button class="add-to-cart" onclick="addToCart(${product.id})">
           <img src="Resources/icons/addtocart-black.png" alt="Add to Cart Icon" />
-        </button>
-         <button class="add-to-wishlist" id="wishlist${product.id}" onclick="addToWishlist(${product.id})">
+          </button>
+          <button class="add-to-wishlist" id="wishlist${product.id}" onclick="addToWishlist(${product.id})">
           <img src="Resources/icons/fav-black.png" alt="Favorite Icon" />
           </button>
+      </div>
       </div>
     `;
     })
